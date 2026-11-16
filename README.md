@@ -6,6 +6,10 @@ Hands-on security operations work: alert triage, log investigation, threat hunti
 
 ---
 
+## About Me
+
+<!-- 100–150 words, first person, in your own voice: why you got into security, what you've built or solved, and the role you're going after. Write a draft and we'll tighten it together. -->
+
 ## Background
 
 | | |
@@ -22,9 +26,11 @@ Hands-on security operations work: alert triage, log investigation, threat hunti
 
 Alert triage and incident write-ups. Each one covers the scenario, investigation steps with the queries I used, IOCs, MITRE ATT&CK mapping, a verdict, and recommended response.
 
-| # | Investigation | Platform | Focus | ATT&CK | Verdict |
-|---|---|---|---|---|---|
-| — | *First write-up coming soon* | | | | |
+| # | Investigation | Role | Platform | Focus | ATT&CK | Report |
+|---|---|---|---|---|---|---|
+| — | *First write-up coming soon* | | | | | |
+
+Each investigation also has a one-page PDF report (`Phishing_Investigation_Report_Joseph_Okafor.pdf` style) for sharing with recruiters.
 
 ## Detections
 

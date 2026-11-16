@@ -2,6 +2,10 @@
 
 Ordered so each phase builds on the one before. A box gets checked once the write-up is published, not just once the room is finished.
 
+**Cadence:** at least one new write-up a month. After each one, update the README table and post a short LinkedIn summary with the TryHackMe badge.
+
+**Focus:** blue team, deep rather than wide (SOC → IR → identity threats). No red team detours.
+
 ## Phase 1 — Alert triage fundamentals
 - [ ] TryHackMe SOC Simulator: phishing alert triage scenario
 - [ ] Phishing analysis: email headers, URLs, attachments (*Phishing Analysis* / *Greenholt Phish*)

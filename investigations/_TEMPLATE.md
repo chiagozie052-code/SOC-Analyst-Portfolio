@@ -8,10 +8,19 @@
 | **Data sources** | e.g. Sysmon, Windows Security logs, PCAP, email headers |
 | **Verdict** | True Positive / False Positive / Benign True Positive |
 | **Severity** | Low / Medium / High / Critical |
+| **Role supported** | SOC Analyst · Incident Responder |
 
-> Lab environment with simulated data, done for training.
+> Lab environment with simulated data, done for training. Screenshots are cleaned up: no flags, answers or secrets.
 
 ---
+
+## Case Study at a Glance
+<!-- This is your interview talking point. One line each, first person. -->
+- **Problem:** I was asked to...
+- **Action:** I used [tools] to...
+- **Outcome:** I found / confirmed / recommended...
+
+**Takeaway:** <!-- Two lines: what I found, and what it means for the role I'm targeting. -->
 
 ## 1. Summary
 <!-- 3–5 sentences: what the alert was, what you found, and the verdict. A busy lead should be able to stop reading here. -->
