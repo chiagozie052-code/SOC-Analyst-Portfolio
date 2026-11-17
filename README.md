@@ -28,7 +28,7 @@ Alert triage and incident write-ups. Each one covers the scenario, investigation
 
 | # | Investigation | Role | Platform | Focus | ATT&CK | Report |
 |---|---|---|---|---|---|---|
-| — | *First write-up coming soon* | | | | | |
+| 1 | [Phishing Unfolding: Invoice Email to DNS Exfiltration](investigations/thm-phishing-unfolding/) | SOC Analyst · IR | TryHackMe SOC Sim | Phishing, PowerShell, reverse shell, DNS exfil | T1566.001, T1059.001, T1048.003 | 100% TP / 100% FP |
 
 Each investigation also has a one-page PDF report (`Phishing_Investigation_Report_Joseph_Okafor.pdf` style) for sharing with recruiters.
 

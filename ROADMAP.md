@@ -35,4 +35,4 @@ Ordered so each phase builds on the one before. A box gets checked once the writ
 ## Completed
 | Date | Investigation | Link |
 |---|---|---|
-| | | |
+| 2026-11-16 | Phishing Unfolding (SOC Sim, Medium) | [write-up](investigations/thm-phishing-unfolding/) |

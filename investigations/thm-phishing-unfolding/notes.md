@@ -139,3 +139,25 @@ Screenshot: assets/screenshots/thm-phishing-unfolding/13-splunk-dns-exfil-bulk-v
 - **All 10 have parent PID 3728**, all query *.haz4rdw4re.io, 22:59:17–22:59:33
 - Interleaved `powershell -ExecutionPolicy Bypass` rows = the exfil script's PowerShell processes
 - Conclusion: bulk TP closure was correct; no outlier hidden in the burst
+
+### 1001: Suspicious Parent Child (Low): FALSE POSITIVE
+Screenshot: assets/screenshots/thm-phishing-unfolding/14-alert-1001-benign-example.jpg
+- 22:26:36 (before the phishing email was even opened), win-3459
+- services.exe (3506) → TrustedInstaller.exe (3577), C:\Windows\servicing\TrustedInstaller.exe, cwd C:\Windows\system32\
+- Windows Modules Installer (Windows Update), legit path, legit parent
+- 1000, 1001, 1002 closed
+
+### 1006: Suspicious Parent Child (Low) on win-3450: FALSE POSITIVE (judgment call)
+Screenshot: assets/screenshots/thm-phishing-unfolding/15-alert-1006-win3450-benign.jpg
+- 22:35:32, **win-3450** (the compromised host), svchost.exe (3855) → rdpclip.exe (3587), C:\Windows\system32\
+- rdpclip = RDP clipboard helper; svchost is its normal parent
+- Occurred ~19 min BEFORE the attachment was opened (22:54:14); parent is not 3728 / not in attacker process tree
+- Host match alone ≠ malicious. Normal pair + legit path + pre-compromise timing → benign
+- Real-world follow-up: confirm the RDP session belonged to michael.ascot (logon type 10 events)
+
+### 1023: Suspicious Parent Child (Low): TRUE POSITIVE (data staging)
+Screenshot: assets/screenshots/thm-phishing-unfolding/16-alert-1023-robocopy-staging.jpg
+- 22:58:32, win-3450, powershell.exe (**3728**) → Robocopy.exe (8356)
+- `Robocopy . C:\Users\michael.ascot\downloads\exfiltration /E`, working dir **Z:\** (= mapped FILESRV-01\SSF-FinancialRecords)
+- Copies the whole financial share (incl. subfolders, /E) into local staging folder (T1039, T1074.001)
+- Rated Low by the rule but is the core data-theft collection step
