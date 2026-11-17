@@ -1,0 +1,8 @@
+# Process timeline for one host
+# Purpose: rebuild the order of commands run on a suspected compromised machine
+# Source investigation: investigations/thm-phishing-unfolding
+# ATT&CK: supports investigation of T1059.001 (PowerShell), T1082/T1033/T1087 (Discovery)
+
+<hostname> powershell
+| sort _time
+| table _time process.name process.command_line

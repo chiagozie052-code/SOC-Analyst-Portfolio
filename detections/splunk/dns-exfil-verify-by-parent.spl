@@ -1,0 +1,8 @@
+# Verify a burst of DNS lookups came from one attacker process
+# Purpose: confirm that many similar alerts share one parent process and one destination domain, instead of opening each one
+# Source investigation: investigations/thm-phishing-unfolding
+# ATT&CK: T1048.003 Exfiltration Over Alternative Protocol (DNS)
+
+<hostname> nslookup
+| sort _time
+| table _time process.pid process.parent.pid process.command_line
