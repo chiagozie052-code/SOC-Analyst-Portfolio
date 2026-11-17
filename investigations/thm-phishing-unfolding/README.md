@@ -19,7 +19,7 @@
 - **Action:** I triaged the queue in Splunk, traced a malicious invoice attachment to a reverse shell, and followed the attacker's process tree (one PowerShell session, PID 3728) through discovery, file-share access, data staging and DNS exfiltration.
 - **Outcome:** I correctly classified all 29 alerts I triaged (15 TP / 14 FP), rebuilt the full attack timeline, decoded the exfiltrated data as a ZIP archive, and wrote escalation-ready case reports with containment steps.
 
-**Takeaway:** _To be written in my own words._
+**Takeaway:** I learned to read an attack the way the attacker ran it: in Splunk, one PowerShell process tied fifteen alerts into a single story, from a fake invoice to stolen financial records. It felt like a real SOC shift and mirrors my day job, where I work through alerts every day and look for the trend behind them. For a SOC role, that's the core skill: triage the noise, correlate the evidence, map it to MITRE ATT&CK, and report the bigger issue clearly.
 
 ## 1. Summary
 On 16 Nov 2026, `michael.ascot` received a fake "overdue invoice" email with a ZIP attachment. About 20 minutes later he opened it and double-clicked `invioce.pdf.lnk`, a Windows shortcut disguised as a PDF. The shortcut ran PowerShell, which downloaded the **powercat** tool into memory and opened a **reverse shell** to an attacker-controlled ngrok tunnel. Over the next five minutes the attacker ran discovery commands, dropped PowerView, mapped the `FILESRV-01\SSF-FinancialRecords` share, copied it into a local staging folder, and **exfiltrated the data over DNS** to `haz4rdw4re.io`. I classified this as a confirmed compromise with data loss and escalated it to Incident Response.
