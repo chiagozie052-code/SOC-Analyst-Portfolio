@@ -7,7 +7,7 @@ Ordered so each phase builds on the one before. A box gets checked once the writ
 **Focus:** blue team, deep rather than wide (SOC → IR → identity threats). No red team detours.
 
 ## Phase 1 — Alert triage fundamentals
-- [ ] TryHackMe SOC Simulator: phishing alert triage scenario
+- [x] TryHackMe SOC Simulator: phishing alert triage scenario
 - [ ] Phishing analysis: email headers, URLs, attachments (*Phishing Analysis* / *Greenholt Phish*)
 - [ ] Splunk basics write-up: building a SPL query library (*Splunk: Exploring SPL*)
 

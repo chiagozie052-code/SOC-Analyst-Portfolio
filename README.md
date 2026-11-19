@@ -8,7 +8,9 @@ Hands-on security operations work: alert triage, log investigation, threat hunti
 
 ## About Me
 
-<!-- 100–150 words, first person, in your own voice: why you got into security, what you've built or solved, and the role you're going after. Write a draft and we'll tighten it together. -->
+I'm a security-focused IT professional with about three years in regulated financial services at Vanguard, Santander Bank and H&R Block, working under SOX, PCI-DSS and NIST-aligned security policies. Day to day, I review Okta authentication logs in Splunk to investigate access issues, triage tickets by risk and business impact, follow SOPs, document findings in ServiceNow and escalate per procedure. I work hands-on with Microsoft Entra ID, Azure, Active Directory, CyberArk and Intune.
+
+This portfolio is where I build the SOC side: alert triage, phishing analysis, malware execution and network exfiltration, written up with the queries I ran and MITRE ATT&CK mapping. I'm looking for a Security Operations Center analyst role and I'm open to 24x7 shift work.
 
 ## Background
 
@@ -30,15 +32,9 @@ Alert triage and incident write-ups. Each one covers the scenario, investigation
 |---|---|---|---|---|---|---|
 | 1 | [Phishing Unfolding: Invoice Email to DNS Exfiltration](investigations/thm-phishing-unfolding/) | SOC Analyst · IR | TryHackMe SOC Sim | Phishing, PowerShell, reverse shell, DNS exfil | T1566.001, T1059.001, T1048.003 | 100% TP / 100% FP |
 
-Each investigation also has a one-page PDF report (`Phishing_Investigation_Report_Joseph_Okafor.pdf` style) for sharing with recruiters.
-
 ## Detections
 
 Search queries and detection logic written during investigations, saved so they can be reused → [`/detections`](detections/)
-
-## Projects
-
-Tools and builds → [`/projects`](projects/)
 
 ## Progress
 
@@ -59,4 +55,4 @@ What I've finished and what's next → [`ROADMAP.md`](ROADMAP.md)
 
 ## Contact
 
-[LinkedIn](#) · [Portfolio site](#)
+[LinkedIn](https://www.linkedin.com/in/chiagozieokafor/)
