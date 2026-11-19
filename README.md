@@ -17,7 +17,7 @@ This portfolio is where I build the SOC side: alert triage, phishing analysis, m
 | | |
 |---|---|
 | **Current role** | IAM Analyst (SailPoint, CyberArk JIT, Okta, Entra ID), regulated financial services |
-| **Certifications** | CompTIA Security+, Blue Team Level 1 (BTL1), CompTIA A+, CySA+ (in progress) |
+| **Certifications** | CompTIA Security+, CompTIA A+ |
 | **Education** | B.S. Information Assurance & Cybersecurity, Capella University |
 | **Production tools** | SailPoint IdentityIQ, Okta, Entra ID / Active Directory, CyberArk, Splunk (Okta auth logs), ServiceNow, PowerShell |
 | **Lab tools** | Splunk SPL, Elastic/Kibana, Wireshark, Sysmon, Snort, CyberChef, MITRE ATT&CK Navigator |
